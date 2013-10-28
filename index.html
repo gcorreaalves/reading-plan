@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="readingPlanApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Plano de Leitura</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">	
+	
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div id="main-header" class="container">
+		<header>
+			<div class="row-fluid">				
+				<div class="span3">
+					<h1>...</h1>
+				</div>
+				<div class="span5">
+					<nav>
+						<ul>
+							<li><a href="javascript:;">Adicionar</a></li>
+							<li><a href="javascript:;">Listar</a></li>
+						</ul>
+					</nav>	
+				</div>
+			</div>
+		</header>
+		<section>
+			<div animated-view></div>			
+		</section>
+	</div>
+
+	<!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/jquery.1.10.2.min.js"></script>
+
+    <!-- UI Libs -->
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <!-- App libs -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/services/booksService.js"></script>
+    <script src="app/directives/animatedView.js"></script>
+</body>
+</html>

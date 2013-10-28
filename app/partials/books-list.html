@@ -1,0 +1,20 @@
+<table class="table">
+	<tr>
+		<th>Título</th>
+		<th>Autor</th>
+		<th>Página</th>
+		<th>Data de Início</th>
+		<th>Data de Término</th>
+		<th>Status</th>
+		<th>Ações</th>
+	</tr>
+	<tr ng-repeat="book in books | filter:searchText | orderBy:'title'">
+		<td><a href="#/book/{{book.id}}">{{book.title}}</a></td>
+		<td>{{book.author}}</td>
+		<td>{{book.page}}</td>
+		<td>{{book.startdate}}</td>
+		<td>{{book.enddate}}</td>
+		<td>{{book.status}}</td>
+		<td>Visualizar | Editar | Excluir </td>
+	</tr>
+</table>

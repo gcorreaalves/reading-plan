@@ -1,0 +1,16 @@
+<form action="#">
+	Título: <input type="text" placeholder="Título" ng-model="newBook.title"><br>
+	Autor: <input type="text" placeholder="Autor" ng-model="newBook.author"><br>
+	Página: <input type="text" placeholder="Página" ng-model="newBook.page"><br>
+	Data de Início: <input type="date" ng-model="newBook.startdate"><br>
+	Data de Término: <input type="date" ng-model="newBook.enddate"><br>
+	Status: 
+	<select name="" ng-model="newBook.status">
+		<option value="1">Ler</option>
+		<option value="2">Lendo</option>
+		<option value="3">Lido</option>
+	</select>
+	 <button id="submitCustomer" class="btn btn-primary" type="button" 
+    data-ng-disabled="!newBook.title || !newBook.author || !newBook.page || !newBook.status"
+    ng-click="saveBook()">Add Book</button>
+</form>

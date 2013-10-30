@@ -21,7 +21,7 @@ app.config(function ($routeProvider) {
                 templateUrl: '/app/partials/books.html'
             })
         //Define a route that has a route parameter in it (:bookID)
-        .when('/book/:bookID',
+        .when('/view/:bookID',
             {
                 controller: 'BooksController',
                 templateUrl: '/app/partials/book-review.html'
@@ -30,7 +30,13 @@ app.config(function ($routeProvider) {
         .when('/add',
             {
                 controller: 'BooksController',
-                templateUrl: '/app/partials/add.html'
+                templateUrl: '/app/partials/book-add.html'
+            })
+        //Define a route that has a route parameter in it (:customerID)
+        .when('/edit/:bookID',
+            {
+                controller: 'BooksController',
+                templateUrl: '/app/partials/book-add.html'
             })
         .otherwise({ redirectTo: '/books' });
 });

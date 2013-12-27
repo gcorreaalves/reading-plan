@@ -20,20 +20,22 @@ app.config(function ($routeProvider) {
                 controller: 'BooksController',
                 templateUrl: '/app/partials/books.html'
             })
-        //Define a route that has a route parameter in it (:bookID)
-        .when('/view/:bookID',
+        .when('/report',
+            {
+                controller: 'BooksController',
+                templateUrl: '/app/partials/report.html'
+            })
+        .when('/book/view/:bookID',
             {
                 controller: 'BooksController',
                 templateUrl: '/app/partials/book-review.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
-        .when('/add',
+        .when('/book/add',
             {
                 controller: 'BooksController',
                 templateUrl: '/app/partials/book-add.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
-        .when('/edit/:bookID',
+        .when('/book/edit/:bookID',
             {
                 controller: 'BooksController',
                 templateUrl: '/app/partials/book-add.html'

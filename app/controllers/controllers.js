@@ -28,4 +28,8 @@ app.controller('BooksController', function ($scope, $routeParams, booksService) 
     $scope.deleteBook = function (id) {
         booksService.deleteBook(id);
     };
+
+    $scope.buildPlan = function (id) {
+        
+    };
 });

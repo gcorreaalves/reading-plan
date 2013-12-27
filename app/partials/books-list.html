@@ -1,5 +1,6 @@
 <table class="table">
 	<tr>
+		<th>Setar Página</th>
 		<th>Título</th>
 		<th>Autor</th>
 		<th>Página</th>
@@ -9,6 +10,7 @@
 		<th>Ações</th>
 	</tr>
 	<tr ng-repeat="book in books | filter:searchText | orderBy:'title'">
+		<td>setar página</td>
 		<td><a href="#/view/{{book.id}}">{{book.title}}</a></td>
 		<td>{{book.author}}</td>
 		<td>{{book.page}}</td>
@@ -16,8 +18,8 @@
 		<td>{{book.enddate}}</td>
 		<td>{{book.status}}</td>
 		<td>
-			<a href="#/view/{{book.id}}">Visualizar</a> | 
-			<a href="#/edit/{{book.id}}">Editar</a> | 
+			<a href="#/book/view/{{book.id}}">Visualizar</a> | 
+			<a href="#/book/edit/{{book.id}}">Editar</a> | 
 			<a href="javascript:;" ng-click="deleteBook(book.id);">Excluir</a> 
 		</td>
 	</tr>

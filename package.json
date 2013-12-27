@@ -1,0 +1,23 @@
+{
+  "name": "reading-plan",
+  "version": "1.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-devtools": "~0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcajpa/reading-plan.git"
+  },
+  "author": "Gustavo Corrêa <contato@gustavocalves.com.br>",
+  "license": "BSD",
+  "gitHead": "6762c7b7cc172b7e52b4c12c8c79bae06dba86c9"
+}
